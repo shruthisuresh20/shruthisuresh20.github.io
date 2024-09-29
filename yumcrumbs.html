@@ -22,12 +22,13 @@
             color: white;
             font-size: 36px;
             font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
         }
 
         /* Wide container */
         .container {
             width: 100%; /* Take up full width */
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -38,13 +39,17 @@
             font-size: 28px;
             border-bottom: 2px solid #4682B4;
             padding-bottom: 10px;
+            position: relative;
+            animation: slideIn 1s ease-in-out;
         }
 
         .blog-content img {
-            width: 100%;
+            width: 80%; /* Reduced image size */
             height: auto;
-            margin-top: 20px;
+            margin: 20px auto;
             border-radius: 10px;
+            display: block;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .blog-content p {
@@ -52,6 +57,8 @@
             line-height: 1.8;
             margin-top: 15px;
             text-align: justify; /* Justify the text for cleaner look */
+            position: relative;
+            animation: slideIn 1s ease-in-out;
         }
 
         .highlight {
@@ -59,12 +66,7 @@
             font-weight: bold;
         }
 
-        /* Interactive headings with animation */
-        .blog-content h2 {
-            position: relative;
-            animation: slideIn 1s ease-in-out;
-        }
-
+        /* Keyframe Animations */
         @keyframes slideIn {
             0% {
                 transform: translateX(-100%);
@@ -76,6 +78,16 @@
             }
         }
 
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Back to Home Link */
         .back-link {
             display: block;
             margin-top: 20px;
@@ -88,6 +100,31 @@
         .back-link:hover {
             color: #FF69B4;
         }
+
+        /* JavaScript Button Styling */
+        .more-content-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #4682B4;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .more-content-btn:hover {
+            background-color: #FF69B4;
+        }
+
+        /* Hidden content section */
+        .hidden-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
     </style>
 </head>
 <body>
@@ -104,7 +141,15 @@
             <img src="yumcrumbs pic1.jpeg" alt="Yumcrumbs Baking Image">
 
             <h2>FSSAI Registered Business</h2>
-            <p>In order to ensure the highest safety and quality standards, I registered Yumcrumbs with the <span class="highlight">Food Safety and Standards Authority of India (FSSAI)</span>. This certification allowed me to grow the business, ensuring that every treat I made complied with food safety regulations. This official recognition helped build trust with customers and gave me the opportunity to expand even further.</p>
+            <p>To ensure the highest safety and quality standards, I registered Yumcrumbs with the <span class="highlight">Food Safety and Standards Authority of India (FSSAI)</span>. This certification allowed me to grow the business and gain the trust of customers, ensuring every treat complied with food safety regulations.</p>
+
+            <!-- Button to reveal more content -->
+            <button class="more-content-btn" onclick="showMoreContent()">Learn More</button>
+
+            <div class="hidden-content" id="extra-content">
+                <h2>Going Beyond</h2>
+                <p>With FSSAI registration, I was able to participate in larger-scale events, catering to bigger crowds and expanding the business beyond just local customers. Yumcrumbs has become a trusted name, known for safety, creativity, and quality in every bite.</p>
+            </div>
 
             <h2>The Secret to Success</h2>
             <p>What makes Yumcrumbs special is the care and creativity I bring into every order. Baking isn't just about the ingredients; it's about the joy it brings to my customers. Whether it's a custom cake for a special occasion or a classic treat, Yumcrumbs stands for quality and creativity. My brownies, in particular, are a customer favorite, and I love experimenting with new flavors to make each order special.</p>
@@ -130,7 +175,21 @@
 
     <a href="index.html" class="back-link">← Back to Home</a>
 
+    <!-- JavaScript for "Learn More" button -->
+    <script>
+        function showMoreContent() {
+            const content = document.getElementById('extra-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                content.style.opacity = '1';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
 </html>
+
 
 
