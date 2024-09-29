@@ -7,30 +7,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #F5F5DC; /* Beige background */
+            color: #A51C30;
             margin: 0;
             padding: 20px;
-            background-color: #FFFFFF;
-            color: #A51C30;
         }
 
-        /* Header text styling */
         .header {
-            background-color: #A51C30;
-            color: #FFFFFF;
             text-align: center;
             padding: 20px;
-            font-size: 30px;
+            background-color: #A51C30;
+            color: white;
+            font-size: 28px;
             font-weight: bold;
         }
 
-        /* CV Section styling */
         .cv-section {
-            text-align: left;
-            padding: 20px;
             max-width: 800px;
-            margin: 20px auto;
-            border: 1px solid #A51C30;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
             border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
         .cv-section h2 {
@@ -39,49 +37,133 @@
             padding-bottom: 10px;
         }
 
-        .cv-section ul {
-            list-style-type: none;
-            padding: 0;
+        .cv-section p, .cv-section li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
         }
 
-        .cv-section ul li {
-            margin-bottom: 15px;
+        ul {
+            padding-left: 20px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .skills-list {
+            columns: 2;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #A51C30;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header text -->
     <div class="header">Curriculum Vitae - Shruthi Suresh</div>
 
-    <!-- CV Section -->
+    <!-- Contact Information -->
+    <div class="cv-section contact-info">
+        <p>Email: ssuresh2@scu.edu | Phone: 408-646-3295</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shruthi-suresh-shru/" target="_blank">linkedin.com/in/shruthi-suresh-shru</a></p>
+        <p>GitHub: <a href="https://github.com/shruthisuresh20" target="_blank">github.com/shruthisuresh20</a></p>
+    </div>
+
+    <!-- Education Section -->
     <div class="cv-section">
-        <!-- Education Section -->
         <h2>Education</h2>
         <ul>
-            <li><strong>Santa Clara University Leavey School of Business</strong> – Santa Clara, CA<br>Master’s in Information Systems, GPA: 3.86<br>September 2023 – June 2025</li>
-            <li><strong>Anna University</strong> – Chennai, India<br>Bachelor of Engineering in Electronics and Communication, GPA: 3.86<br>August 2019 – June 2023</li>
+            <li>
+                <strong>Santa Clara University Leavey School of Business</strong> - Santa Clara, CA<br>
+                Master's in Information Systems, GPA: 3.86 (Expected Graduation: June 2025)<br>
+                Relevant coursework: Data Analytics with Python, Database Management Systems, Information Systems Analysis and Design
+            </li>
+            <li>
+                <strong>Anna University</strong> - Chennai, India<br>
+                Bachelor of Engineering in Electronics and Communication, GPA: 3.86 (August 2019 - June 2023)
+            </li>
         </ul>
-
-        <!-- Academic Projects -->
-        <h2>Academic Projects</h2>
-        <ul>
-            <li><strong>Job Data Analysis (Team Lead)</strong><br>Managed null values, resolved duplicates, and split columns to enhance insights, revealing high-paying job patterns and insights.<br>Technologies: Python, Pandas, Matplotlib</li>
-            <li><strong>Brain Tumor Classification Using Machine Learning</strong><br>Developed a CNN model for brain tumor classification, achieving 97% accuracy using Transfer Learning models like VGG-16 and ResNet50.<br>Technologies: Python, TensorFlow</li>
-        </ul>
-
-        <!-- Work Experience -->
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>PulmonX - Data Analyst Intern</strong> (August 2024 – Present)<br>Developed Python solutions to automate email matching and resolved Salesforce data issues, improving data accuracy by 93%.</li>
-            <li><strong>Folloze - Data Analyst Intern</strong> (January 2024 – June 2024)<br>Developed models to prioritize sales leads, forecasted revenue, and provided visual insights that improved sales performance.</li>
-            <li><strong>Yumcrumbs - Small Business Owner</strong> (November 2020 – May 2023)<br>Ran a successful small business during the pandemic, analyzing sales data trends and optimizing profits through data-driven decisions.</li>
-        </ul>
-
-        <!-- Hobbies Section -->
-        <h2>Hobbies</h2>
-        <p>I enjoy traveling, dancing, fashion, and spending time with friends. I also love exploring new cultures and learning new things!</p>
     </div>
+
+    <!-- Technical Skills Section -->
+    <div class="cv-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-list">
+            <ul>
+                <li>Programming Languages: Python, SQL, R, Java, JavaScript, C, C++, HTML, CSS</li>
+                <li>Database Tools: Snowflake, Oracle, MySQL, MongoDB, Microsoft SQL Server</li>
+                <li>Data Tools: PySpark, Hadoop, Hive, Looker Studio, Tableau, Power BI</li>
+                <li>Cloud Technologies: AWS, Azure, Google Cloud Platform</li>
+                <li>Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, NLTK, TensorFlow, ggplot, Plotly, Keras, PyTorch</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="cv-section">
+        <h2>Experience</h2>
+        <p class="experience-title"><strong>PulmonX - Data Analyst Intern</strong> (August 2024 – Present)</p>
+        <ul>
+            <li>Developed an automated Python solution to match emails to accounts, reducing manual work significantly.</li>
+            <li>Enhanced data quality by 93% through targeted data collection and validation.</li>
+            <li>Resolved Salesforce duplicate data issues using automated scripts.</li>
+            <li>Technologies used: Microsoft Excel, Snowflake, Salesforce, Python, Tableau.</li>
+        </ul>
+
+        <p class="experience-title"><strong>Folloze - Data Analyst Intern (Practicum)</strong> (January 2024 - June 2024)</p>
+        <ul>
+            <li>Spearheaded the development of a model to prioritize sales leads with 75.68% accuracy through data preprocessing and financial analysis.</li>
+            <li>Leveraged predictive analytics to forecast deals and revenue, improving sales accuracy.</li>
+            <li>Developed custom visualizations to highlight key customer segment differences and drive performance.</li>
+            <li>Technologies used: Microsoft Excel, Snowflake, Salesforce, Python, Tableau.</li>
+        </ul>
+
+        <p class="experience-title"><strong>Yumcrumbs - Small Business Owner</strong> (November 2020 - May 2023)</p>
+        <ul>
+            <li>Started a small baking business, completed 5000+ orders, and registered with the Food Safety and Standards Authority of India.</li>
+            <li>Analyzed sales data trends to optimize profits through data-driven decisions and proactive supply management.</li>
+            <li>Redesigned production and conducted market research for strategic enhancements.</li>
+            <li>Technologies used: Microsoft Excel.</li>
+        </ul>
+    </div>
+
+    <!-- Academic Projects Section -->
+    <div class="cv-section">
+        <h2>Academic Projects</h2>
+        <p class="experience-title"><strong>Job Data Analysis (Team Lead)</strong></p>
+        <ul>
+            <li>Managed null values, resolved duplicates, and split columns to improve dataset insights.</li>
+            <li>Revealed high-paying job patterns using a decision tree, highlighting experience's impact on salary.</li>
+            <li>Technologies used: Jupyter Notebook, NumPy, Pandas, Python, Scikit-learn, Matplotlib.</li>
+        </ul>
+
+        <p class="experience-title"><strong>Brain Tumor Classification Using Machine Learning</strong></p>
+        <ul>
+            <li>Developed a CNN model for brain tumor classification, achieving 97% accuracy with Transfer Learning (VGG-16, ResNet50).</li>
+            <li>Worked on dataset cleaning and implemented strategies to improve classification performance.</li>
+            <li>Technologies used: Jupyter Notebook, Python, TensorFlow.</li>
+        </ul>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+
 </body>
 </html>
 
