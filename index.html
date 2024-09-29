@@ -16,15 +16,15 @@
 
         /* Header image styling */
         .header-image {
-            width: 100%; /* Make the width take up the full page */
-            height: 300px; /* Set a fixed height */
-            object-fit: cover; /* Ensures the image is cropped to fit the space */
+            width: 100%; /* Full width */
+            height: 300px; /* Fixed height */
+            object-fit: cover;
         }
 
         /* Header text styling */
         .header {
-            background-color: #A51C30; /* Updated red color */
-            color: #FFFFFF; /* White text */
+            background-color: #A51C30;
+            color: #FFFFFF;
             padding: 20px;
             font-size: 30px;
             font-weight: bold;
@@ -37,7 +37,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #A51C30; /* Updated red border */
+            border: 3px solid #A51C30;
         }
 
         /* Introduction styling */
@@ -52,7 +52,7 @@
             font-size: 18px;
             padding: 10px;
             background-color: #A51C30; /* Updated red color */
-            color: #FFFFFF; /* White text */
+            color: #FFFFFF;
             border-radius: 8px;
             display: inline-block;
         }
@@ -68,7 +68,7 @@
             padding: 10px 20px;
             font-size: 16px;
             background-color: #A51C30; /* Updated red color */
-            color: #FFFFFF; /* White text */
+            color: #FFFFFF;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -76,8 +76,8 @@
 
         /* Hover effect for the button */
         button:hover {
-            background-color: #FFFFFF; /* White background */
-            color: #A51C30; /* Updated red text */
+            background-color: #FFFFFF;
+            color: #A51C30;
             border: 2px solid #A51C30;
         }
     </style>
@@ -111,21 +111,13 @@
             <p><i class="fas fa-phone icon"></i>Phone: 408-646-3295</p>
         </div>
 
-        <!-- Button with interactivity (Changed to "View My CV") -->
-        <button onclick="viewCV()">View My CV</button>
+        <!-- Button to view CV -->
+        <a href="cv.html"><button>View My CV</button></a>
     </div>
-
-    <!-- JavaScript for interactivity -->
-    <script>
-        function viewCV() {
-            alert("Redirecting to Shruthi Suresh's CV...");
-            // Here, you could add a link to your CV if it's hosted online
-            // window.location.href = 'your-cv-url-here';
-        }
-    </script>
 
 </body>
 </html>
+
 
 
 
