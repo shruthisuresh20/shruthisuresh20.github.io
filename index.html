@@ -3,131 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shruthi Suresh - CV</title>
+    <title>Shruthi Suresh - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        /* Style for the sidebar */
-        .sidebar {
-            background-color: #0000FF;
-            color: white;
-            width: 200px;
-            position: fixed;
-            height: 100%;
-            padding: 20px;
-            top: 0;
-            left: 0;
-        }
-
-        /* Style for sidebar links */
-        .sidebar a {
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin: 10px 0;
-        }
-
-        /* Hover effect for links */
-        .sidebar a:hover {
-            color: yellow;
-        }
-
-        /* Main content section */
-        .main-content {
-            margin-left: 220px; /* Sidebar width + padding */
-            padding: 20px;
-        }
-
-        /* Style for header */
-        .header {
-            background-color: black;
-            color: yellow;
+            background-color: #FFFFFF;
+            color: #FF0000;
             text-align: center;
-            padding: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            padding: 20px;
             font-size: 24px;
             font-weight: bold;
         }
 
-        /* Style for image */
         .profile-pic {
             display: block;
-            margin: 0 auto;
+            margin: 30px auto;
             width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 2px solid #000;
+            border: 3px solid #FF0000;
         }
 
-        /* Style for CV content */
-        .cv-section {
-            margin-bottom: 40px;
+        .intro {
+            margin-top: 20px;
+            font-size: 20px;
         }
 
-        .cv-section h2 {
-            color: #000;
-            border-bottom: 1px solid #000;
-            margin-bottom: 10px;
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border-radius: 8px;
+            display: inline-block;
         }
 
-        /* Style for links in the content */
-        .cv-section a {
-            color: blue;
-            text-decoration: none;
+        /* Hover effect for interactivity */
+        .contact-info:hover {
+            background-color: #FFFFFF;
+            color: #FF0000;
+            border: 2px solid #FF0000;
         }
 
-        .cv-section a:hover {
-            text-decoration: underline;
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FFFFFF;
+            color: #FF0000;
+            border: 2px solid #FF0000;
         }
     </style>
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h3>Menu</h3>
-        <a href="#">Home</a>
-        <a href="#">Books and Research Articles</a>
-        <a href="#">Citations</a>
-        <a href="#">Vita</a>
-        <a href="#">Bio</a>
-        <a href="#">Awards</a>
-        <a href="#">My Blog</a>
-        <a href="#">Finance Links</a>
-        <a href="#">Math and Computer Science Links</a>
-    </div>
+    <div class="header">Hello All!</div>
 
-    <!-- Main content -->
-    <div class="main-content">
-        <div class="header">
-            Shruthi Suresh - CV
-        </div>
-
-        <!-- Profile Picture -->
+    <div class="container">
+        <!-- Profile Picture in the center -->
         <img src="mypicture.jpg" alt="Shruthi Suresh" class="profile-pic">
 
-        <div class="cv-section">
-            <h2>Education</h2>
-            <p><strong>Santa Clara University, Leavey School of Business</strong> – Santa Clara, CA<br>
-            <em>Master's in Information Systems, GPA: 3.86</em><br>
-            September 2023 – June 2025</p>
-
-            <p><strong>Anna University</strong> – Chennai, India<br>
-            <em>Bachelor of Engineering in Electronics and Communication, GPA: 3.86</em><br>
-            August 2019 – June 2023</p>
+        <!-- Introduction Section -->
+        <div class="intro">
+            <p>I am Shruthi Suresh</p>
+            <p>Master's Student at Santa Clara University</p>
+            <p>Studying Master's in Information Systems</p>
         </div>
 
-        <div class="cv-section">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming Languages:</strong> Python, SQL, R, Java, JavaScript, C, C++, HTML, CSS</li>
-                <li><strong>Database Tools:</strong> Snowflake, Oracle, MySQL, MongoDB, Microsoft SQL Server</li>
-                <li><strong>Data Tools:</strong> PySpark, Hadoop, Hive, Looker Studio, Tableau, Power BI</li>
-                <li><strong>Cloud Technologies:</strong> AWS, Azure, Google Cloud Platform</li>
-                <li><strong>Libraries:</strong> Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, NLTK, TensorFlow, ggplot, Plotly, Keras, PyTorch</li>
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p>Email: <a href="mailto:ssuresh2@scu.edu" style="color: #FFFFFF;">ssuresh2@scu.edu</a></p>
+            <p>Phone: 408-646-3295</p>
+        </div>
+
+        <!-- Button that triggers an interactive popup -->
+        <button onclick="showMessage()">Click Me!</button>
+    </div>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        function showMessage() {
+            alert("Welcome to Shruthi Suresh's Portfolio! Thanks for visiting.");
+        }
+    </script>
     
-p
+</body>
+</html>
 
 
