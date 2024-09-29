@@ -16,8 +16,9 @@
 
         /* Header image styling */
         .header-image {
-            width: 100%;
+            width: 70%; /* Reduced width */
             height: auto;
+            margin-top: 10px;
         }
 
         /* Header text styling */
@@ -63,6 +64,11 @@
             border: 2px solid #A51C30;
         }
 
+        /* Icon for phone and email */
+        .icon {
+            margin-right: 8px;
+        }
+
         /* Button styling */
         button {
             margin-top: 30px;
@@ -82,6 +88,9 @@
             border: 2px solid #A51C30;
         }
     </style>
+
+    <!-- Importing Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -103,25 +112,28 @@
             <p>Studying Master's in Information Systems</p>
         </div>
 
-        <!-- Contact Information -->
+        <!-- Contact Information with Icons -->
         <div class="contact-info">
-            <p>Email: <a href="mailto:ssuresh2@scu.edu" style="color: #FFFFFF;">ssuresh2@scu.edu</a></p>
-            <p>Phone: 408-646-3295</p>
+            <p><i class="fas fa-envelope icon"></i>Email: ssuresh2@scu.edu</p>
+            <p><i class="fas fa-phone icon"></i>Phone: 408-646-3295</p>
         </div>
 
-        <!-- Button with interactivity -->
-        <button onclick="showMessage()">Click Me!</button>
+        <!-- Button with interactivity (Changed to "View My CV") -->
+        <button onclick="viewCV()">View My CV</button>
     </div>
 
     <!-- JavaScript for interactivity -->
     <script>
-        function showMessage() {
-            alert("Welcome to Shruthi Suresh's Portfolio! Thanks for visiting.");
+        function viewCV() {
+            alert("Redirecting to Shruthi Suresh's CV...");
+            // Here, you could add a link to your CV if it's hosted online
+            // window.location.href = 'your-cv-url-here';
         }
     </script>
 
 </body>
 </html>
+
 
 
 
