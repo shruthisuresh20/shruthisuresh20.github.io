@@ -10,13 +10,19 @@
             margin: 0;
             padding: 0;
             background-color: #FFFFFF; /* White background */
-            color: #FF0000; /* Red text */
+            color: #A51C30; /* Updated red color */
             text-align: center;
         }
 
-        /* Header styling */
+        /* Header image styling */
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Header text styling */
         .header {
-            background-color: #FF0000; /* Red background */
+            background-color: #A51C30; /* Updated red color */
             color: #FFFFFF; /* White text */
             padding: 20px;
             font-size: 30px;
@@ -30,7 +36,7 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 3px solid #FF0000; /* Red border */
+            border: 3px solid #A51C30; /* Updated red border */
         }
 
         /* Introduction styling */
@@ -44,7 +50,7 @@
             margin-top: 20px;
             font-size: 18px;
             padding: 10px;
-            background-color: #FF0000; /* Red background */
+            background-color: #A51C30; /* Updated red color */
             color: #FFFFFF; /* White text */
             border-radius: 8px;
             display: inline-block;
@@ -53,8 +59,8 @@
         /* Hover effect for contact information */
         .contact-info:hover {
             background-color: #FFFFFF; /* White background */
-            color: #FF0000; /* Red text */
-            border: 2px solid #FF0000;
+            color: #A51C30; /* Updated red text */
+            border: 2px solid #A51C30;
         }
 
         /* Button styling */
@@ -62,7 +68,7 @@
             margin-top: 30px;
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #FF0000; /* Red background */
+            background-color: #A51C30; /* Updated red color */
             color: #FFFFFF; /* White text */
             border: none;
             border-radius: 5px;
@@ -72,17 +78,20 @@
         /* Hover effect for the button */
         button:hover {
             background-color: #FFFFFF; /* White background */
-            color: #FF0000; /* Red text */
-            border: 2px solid #FF0000;
+            color: #A51C30; /* Updated red text */
+            border: 2px solid #A51C30;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Image (Santa Clara University Image) -->
+    <img src="santa-clara-university.jpg" alt="Santa Clara University" class="header-image">
+
+    <!-- Header text -->
     <div class="header">Hello All!</div>
 
-    <!-- Container for content -->
+    <!-- Main container for content -->
     <div class="container">
         <!-- Profile Picture centered -->
         <img src="mypicture.jpg" alt="Shruthi Suresh" class="profile-pic">
@@ -100,17 +109,7 @@
             <p>Phone: 408-646-3295</p>
         </div>
 
-        <!-- Button that triggers an interactive popup -->
-        <button onclick="showMessage()">Click Me!</button>
-    </div>
+        <!-- Button with interactivity -->
+        <button onclick="showMessa
 
-    <!-- JavaScript for interactivity -->
-    <script>
-        function showMessage() {
-            alert("Welcome to Shruthi Suresh's Portfolio! Thanks for visiting.");
-        }
-    </script>
-
-</body>
-</html>
 
