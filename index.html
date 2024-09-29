@@ -3,189 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yumcrumbs - Baking Business</title>
+    <title>Shruthi Suresh - Portfolio</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #FFFFFF; /* Clean white background */
-            color: #4A4A4A; /* Slate gray text */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #F5F5DC; /* Beige background */
+            color: #A51C30;
+            text-align: center;
         }
 
-        /* Full-width header */
-        .header {
-            width: 100%;
-            text-align: center;
-            padding: 40px 0;
-            background-color: #4682B4; /* Blue header */
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #A51C30;
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center;
+            padding: 10px;
+        }
+
+        .navbar a {
+            margin: 0 15px; /* Spacing between links */
             color: white;
-            font-size: 36px;
-            font-weight: bold;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        /* Wide container to fit content across the page */
-        .container {
-            width: 95%; /* Use more of the page width */
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Blog content with full width styling */
-        .blog-content h2 {
-            color: #4682B4; /* Blue headings */
-            font-size: 28px;
-            border-bottom: 2px solid #4682B4;
-            padding-bottom: 10px;
-            position: relative;
-            animation: slideIn 1s ease-in-out;
-        }
-
-        .blog-content img {
-            width: 75%; /* Increased image width */
-            height: auto;
-            max-height: 500px; /* Increased image height */
-            margin: 20px auto;
-            border-radius: 10px;
-            display: block;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .blog-content p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin-top: 15px;
-            text-align: left; /* Align text to the left */
-            position: relative;
-            animation: slideIn 1s ease-in-out;
-        }
-
-        .highlight {
-            color: #FF69B4; /* Hot pink for highlighting key points */
-            font-weight: bold;
-        }
-
-        /* Keyframe Animations */
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* Back to Home Link */
-        .back-link {
-            display: block;
-            margin-top: 20px;
             text-align: center;
-            color: #4682B4;
             text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #DD2F4D;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Header image styling */
+        .header-image {
+            width: 100%;
+            height: 200px; /* Reduced height further */
+            object-fit: cover;
+        }
+
+        /* Profile picture styling */
+        .profile-pic {
+            display: block;
+            margin: 30px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #A51C30;
+        }
+
+        /* Introduction text below the picture */
+        .intro {
+            margin-top: 10px;
+            font-size: 18px;
             font-weight: bold;
         }
 
-        .back-link:hover {
-            color: #FF69B4;
+        /* Welcome paragraph */
+        .welcome {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 0 20px;
         }
 
-        /* Project Links Section */
-        .projects-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #4682B4;
-        }
-
-        .projects-section h2 {
-            color: #4682B4;
-            font-size: 28px;
-            margin-bottom: 15px;
-        }
-
-        .projects-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .projects-section li {
-            margin-bottom: 10px;
-        }
-
-        .projects-section a {
-            color: #4682B4;
-            text-decoration: none;
+        /* Footer for contact information */
+        .footer {
+            margin-top: 30px;
             font-size: 18px;
         }
 
-        .projects-section a:hover {
-            color: #FF69B4;
-            text-decoration: underline;
+        /* View My CV button */
+        .cv-btn {
+            background-color: #A51C30;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
         }
 
+        .cv-btn:hover {
+            background-color: #DD2F4D;
+            color: #FFFFFF;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Full Width Header -->
-    <div class="header">Yumcrumbs - Baking Business</div>
+    <!-- SCU Image (Santa Clara University) -->
+    <img src="SCU pic.png" alt="Santa Clara University" class="header-image">
 
-    <div class="container">
-        <div class="blog-content">
-            <h2>The Journey of Yumcrumbs</h2>
-            <p>Yumcrumbs began as a small hobby in my kitchen, born from my love for baking. At first, it was just for friends and family, but word of mouth spread quickly. With each new order, I realized that I had something special. The support from my community helped turn Yumcrumbs into a thriving business. Over time, I honed my skills, learning how to balance creativity with precision. I've now baked over <span class="highlight">5000+ orders</span>, and what started as a hobby has grown into a rewarding career. Whether it's cakes, cupcakes, or brownies, Yumcrumbs is all about making every celebration a little sweeter.</p>
+    <!-- Profile Picture centered -->
+    <img src="Linked in Pic.jpeg" alt="Shruthi Suresh" class="profile-pic">
 
-            <!-- First Image -->
-            <img src="yumcrumbs pic1.jpeg" alt="Yumcrumbs Baking Image">
-
-            <h2>FSSAI Registered Business</h2>
-            <p>To ensure the highest safety and quality standards, I registered Yumcrumbs with the <span class="highlight">Food Safety and Standards Authority of India (FSSAI)</span>. This certification was a huge step in the growth of Yumcrumbs, as it helped me meet the regulatory standards for food safety and hygiene. With FSSAI registration, I was able to cater to larger events and meet the demands of more customers. This certification brought a level of professionalism and trust that allowed my business to expand and serve people beyond just my local community. Today, Yumcrumbs is recognized as a trusted name in homemade treats, with safety and quality at its core.</p>
-
-            <h2>The Secret to Success</h2>
-            <p>Yumcrumbs’ success can be attributed to the care and creativity I put into every single order. Each cake, cupcake, or brownie is crafted with attention to detail and a passion for making each treat special. Whether it’s experimenting with new flavors or perfecting the classics, I ensure that every order feels personal. My customers know they can count on me for delicious, high-quality desserts that are not only visually stunning but also packed with flavor. From birthdays to weddings, Yumcrumbs plays a role in life's sweetest moments. One thing that keeps me going is knowing that my treats bring joy to others.</p>
-
-            <!-- Second Image -->
-            <img src="yumcrumbs pic2.jpeg" alt="Delicious Brownies">
-
-            <h2>Expansion and Growth</h2>
-            <p>Over the years, Yumcrumbs has evolved from a small hobby into a full-fledged business. I’ve had the opportunity to cater to events ranging from small gatherings to large celebrations. My steady customer base and overwhelming demand have led me to explore more possibilities for Yumcrumbs. From launching new flavors to expanding the range of services offered, such as bulk ordering and catering for corporate events, Yumcrumbs is constantly growing. My journey has been filled with valuable lessons in business management, customer service, and baking itself. Every challenge has only strengthened my resolve to provide the best desserts to my community.</p>
-
-            <h2>Brownies: A Crowd Favorite</h2>
-            <p>Brownies are one of the most popular treats I offer at Yumcrumbs. My customers rave about the rich, fudgy texture and the variety of flavors available. From classic chocolate to more adventurous flavors like caramel swirl or espresso, there's something for everyone. The brownies are often the first thing people order, and they quickly become a customer favorite. The feedback I get from my brownies has been amazing, and I continue to experiment with new flavors to keep things fresh and exciting. These brownies have become a staple at Yumcrumbs and are a big part of the reason for my business's continued success.</p>
-
-            <!-- Third Image -->
-            <img src="yumcrumbs pic3.jpeg" alt="Creative Brownies Display">
-
-            <h2>Baking is My Therapy</h2>
-            <p>Baking has always been more than just a business for me; it’s a way to relax and unwind. No matter how hectic things get, I always find peace in my kitchen. The process of baking, from mixing ingredients to watching a cake rise in the oven, brings me immense joy. It’s therapeutic to know that something I enjoy so much can bring happiness to others. Every order I complete comes with a part of me—my creativity, my passion, and my love for baking. I’m grateful for the journey Yumcrumbs has taken me on, and I look forward to continuing to share my love of baking with the world.</p>
-
-            <p class="highlight">Thank you for being a part of Yumcrumbs!</p>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="projects-section">
-            <h2>My Projects</h2>
-            <ul>
-                <li><a href="https://github.com/shruthisuresh20/Analysis-on-Job-Data" target="_blank">Analysis on Job Data (GitHub Link)</a></li>
-                <li><a href="https://github.com/shruthisuresh20/Brain-Tumor-Classification-Using-Machine-Learning" target="_blank">Brain Tumor Classification Using Machine Learning (GitHub Link)</a></li>
-            </ul>
-        </div>
-
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="mailto:ssuresh2@scu.edu">Email: ssuresh2@scu.edu</a>
+        <a href="tel:+14086463295">Phone: 408-646-3295</a>
+        <a href="yumcrumbs.html">Yumcrumbs</a>
+        <a href="https://www.linkedin.com/in/shruthi-suresh-shru/"_blank">LinkedIn</a>
     </div>
 
-    <a href="index.html" class="back-link">← Back to Home</a>
+    <!-- Hello All section below picture -->
+    <div class="intro">Hello All!</div>
+
+    <!-- Welcome paragraph -->
+    <div class="welcome">
+        Thank you for showing interest in getting to know more about me. I am Shruthi Suresh, a graduate student at Santa Clara University's Leavey School of Business. I am passionate about data analytics and currently seeking full-time opportunities. Feel free to explore the sections in the navigation bar to know more about me, my work, and projects!
+    </div>
+
+    <!-- Footer with contact information and CV link -->
+    <div class="footer">
+        <a href="cv.html" class="cv-btn">View My CV</a>
+    </div>
 
 </body>
 </html>
