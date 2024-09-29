@@ -13,27 +13,29 @@
             padding: 0;
         }
 
+        /* Header style for full width and better look */
         .header {
+            width: 100%;
             text-align: center;
-            padding: 20px;
+            padding: 40px 0;
             background-color: #4682B4; /* Blue header */
             color: white;
-            font-size: 30px;
+            font-size: 36px;
             font-weight: bold;
         }
 
-        .blog-content {
-            max-width: 900px;
-            margin: 30px auto;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 0px;
-            box-shadow: none;
         }
 
+        /* General content style */
         .blog-content h2 {
             color: #4682B4; /* Blue headings */
-            font-size: 24px;
+            font-size: 26px;
+            border-bottom: 2px solid #4682B4;
+            padding-bottom: 10px;
         }
 
         .blog-content img {
@@ -44,7 +46,7 @@
         }
 
         .blog-content p {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.8;
             margin-top: 15px;
         }
@@ -54,48 +56,14 @@
             font-weight: bold;
         }
 
-        .back-link {
-            display: block;
-            margin-top: 20px;
-            text-align: center;
-            color: #4682B4;
-            text-decoration: none;
-            font-weight: bold;
+        /* Animation to make sections more interactive */
+        .blog-content h2 {
+            position: relative;
+            animation: slideIn 1s ease-in-out;
         }
 
-    </style>
-</head>
-<body>
+        @keyframes slideIn {
+            0% {
+                transform
 
-    <div class="header">Yumcrumbs - Baking Business</div>
-
-    <div class="blog-content">
-        <h2>The Journey of Yumcrumbs</h2>
-        <p>Yumcrumbs started as a fun hobby in my kitchen, but it quickly turned into a thriving business thanks to all the love and support from my friends, family, and community! I've baked over <span class="highlight">5000+ orders</span> and enjoyed every moment of it!</p>
-
-        <!-- First Picture -->
-        <img src="yumcrumbs pic1.jpeg" alt="Yumcrumbs Baking Image">
-
-        <h2>The Secret to Success</h2>
-        <p>One of the highlights of Yumcrumbs is the creativity I get to unleash in every order! From custom cakes to brownies, each creation reflects my passion for baking. My brownies are especially popular, and I love experimenting with new flavors.</p>
-
-        <h2>Brownies: A Crowd Favorite</h2>
-        <p>Our brownies are a customer favorite, and we've experimented with so many different flavors! From the classic chocolate brownie to new and exciting flavor combinations, each one is baked with love and care.</p>
-
-        <!-- Second Picture -->
-        <img src="yumcrumbs pic2.jpeg" alt="Delicious Brownies">
-
-        <h2>Baking is My Therapy</h2>
-        <p>Baking has always been my way of expressing creativity and finding calm in a busy world. It's not just about business; it's about bringing joy to others through something that brings me joy. Each cupcake, brownie, and cake I bake has a little piece of my heart in it!</p>
-
-        <!-- Third Picture -->
-        <img src="yumcrumbs pic3.jpeg" alt="Creative Brownies Display">
-
-        <p class="highlight">Thank you for being a part of Yumcrumbs!</p>
-    </div>
-
-    <a href="index.html" class="back-link">← Back to Home</a>
-
-</body>
-</html>
 
